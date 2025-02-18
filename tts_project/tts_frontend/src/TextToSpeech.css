@@ -1,0 +1,212 @@
+/* Full-screen dark theme */
+body {
+    background-color: black;
+    color: white;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Main container */
+.container {
+    background: rgba(20, 20, 20, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Title with neon effect */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00ffff; /* Cyan */
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #008b8b;
+    margin-bottom: 20px;
+}
+
+/* Input Box */
+.text-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.text-input:focus {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+    transform: scale(1.02);
+}
+
+/* Dropdown Styling */
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+    background: white;
+    color: black;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown:focus {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+    transform: scale(1.02);
+}
+
+/* Speed label */
+.speed-label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Speed slider */
+.speed-slider {
+    width: 100%;
+    accent-color: #00ffff;
+    cursor: pointer;
+}
+
+/* Animated Button */
+.button {
+    background: linear-gradient(45deg, #007bff, #8a2be2);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px #8a2be2, 0 0 20px #007bff;
+    margin-top: 10px;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #8a2be2, 0 0 30px #007bff;
+}
+
+/* Logout Button */
+.logout-button {
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px #ff416c, 0 0 20px #ff4b2b;
+    margin-bottom: 20px;
+}
+
+.logout-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff416c, 0 0 30px #ff4b2b;
+}
+
+/* Waveform Display */
+.waveform {
+    width: 100%;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 255, 255, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+.waveform:hover {
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+/* Authentication Container */
+.auth-container {
+    background: rgba(30, 30, 30, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(255, 69, 0, 0.5);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Authentication Input Fields */
+.auth-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: black;
+    background: white;
+    box-shadow: 0 4px 10px rgba(255, 69, 0, 0.3);
+    margin-bottom: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.auth-input:focus {
+    box-shadow: 0 0 15px rgba(255, 69, 0, 0.7);
+    transform: scale(1.02);
+}
+
+/* Authentication Buttons */
+.auth-button {
+    background: linear-gradient(45deg, #ff8c00, #ff4500);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px #ff4500, 0 0 20px #ff8c00;
+    margin: 5px;
+}
+
+.auth-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff4500, 0 0 30px #ff8c00;
+}
+
+/* Error Message */
+.error-message {
+    color: #ff4b2b;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
